@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    background: url(smile2.jpg);
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    background-color:rgba(236, 235, 173, 0.8);
+    padding:20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .6);
+    border-radius: 15px;
+    width:85%;
+    text-align: center;
+    color: darkgreen;
+}   
+
+.heading{
+    font-size: 45px;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, .3);
+    letter-spacing: 4px;
+}
+
+.joke{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 40px;
+    color: brown;
+}
+
+.btn{
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    margin-left: 250px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, .6);
+    text-transform:uppercase;
+    width: 400px;
+    color: darkgreen;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 4px 4px rgba(0,0,0,.5);
+    transition: all .4s ease;
+}
+
+.category{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    margin-left: 0;
+    border-radius: 4px;
+    width: 250px;
+    text-align: center;
+    font-size: 17px;
+    color: darkgreen;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.category option{
+    background-color: rgb(219, 255, 184);
+}
+
+.category option:checked{
+    background-color: rgb(121, 222, 177);
+}
+
+@media (max-width:1070px){
+    .container{
+        justify-content: center;
+    }
+    .btn{
+        justify-content: center;
+        margin-bottom: .6rem;
+        margin-left: 10px;
+    }
+    .category{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    .category{
+        width: 150px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .btn{
+        width: 150px;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 1px;
+        height: 15px;
+        justify-content: center;
+        margin-top: 50%;
+    }
+    .container{
+        width: 80%;
+        /* height: 90vh; */
+    }
+    .container p{
+        font-size: 22px;
+        margin-top: 5rem;   
+    }
+    .container h1{
+        font-size: 30px;
+    }
+}
+
